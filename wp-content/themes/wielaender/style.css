@@ -1,0 +1,385 @@
+/*
+Theme Name: Wielaender Theme
+Theme URI: http://petergrassberger.at
+Description: Custom Theme for Wielaender (Based on Twenty Ten & Stalkers Theme)
+Version: 1.0
+Author: Peter Grassberger
+Author URI: http://petergrassberger.at
+Tags: custom
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+/*## GLOBAL ##*/
+
+body {
+	font-size: 62.5% /* sets medium size from 16px to 10px, 1em is 10px now. */
+}
+
+/* moz scrollbar fix */
+html {
+	overflow: -moz-scrollbars-vertical !important;
+}
+
+
+/* font by: http://www.exljbris.com/fontinsans.html */
+/* font converted by: http://www.fontsquirrel.com/fontface/generator */
+@font-face {
+	font-family: 'Fontin';
+	src: 	url('fonts/fontin_sans_r_45b-webfont.eot');
+	src: 	url('fonts/fontin_sans_r_45b-webfont.eot?#iefix') format('embedded-opentype'), 
+			url('fonts/fontin_sans_r_45b-webfont.woff') format('woff'), 
+			url('fonts/fontin_sans_r_45b-webfont.ttf') format('truetype'), 
+			url('fonts/fontin_sans_r_45b-webfont.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'Fontin';
+	src: 	url('fonts/fontin_sans_i_45b-webfont.eot');
+	src: 	url('fonts/fontin_sans_i_45b-webfont.eot?#iefix') format('embedded-opentype'), 
+			url('fonts/fontin_sans_i_45b-webfont.woff') format('woff'), 
+			url('fonts/fontin_sans_i_45b-webfont.ttf') format('truetype'), 
+			url('fonts/fontin_sans_i_45b-webfont.svg#webfont') format('svg');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fontin';
+	src: 	url('fonts/fontin_sans_b_45b-webfont.eot');
+	src: 	url('fonts/fontin_sans_b_45b-webfont.eot?#iefix') format('embedded-opentype'), 
+			url('fonts/fontin_sans_b_45b-webfont.woff') format('woff'), 
+			url('fonts/fontin_sans_b_45b-webfont.ttf') format('truetype'), 
+			url('fonts/fontin_sans_b_45b-webfont.svg#webfont') format('svg');
+	font-weight: bold;
+}
+
+body {
+	background-image: url('images/background-gradient.png');
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	background-color: #f5f2e9;
+	overflow: auto;
+	font-family: Fontin, Arial, sans-serif;
+	font-size: 1em;
+	color: #44211c;
+	margin: 0 0 100px 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	color: #b02e0b;
+	font-weight: bold;
+}
+
+a {
+	color: #b02e0b;
+}
+
+:focus {
+    outline: none!important;
+}
+
+/*## HEADER ##*/
+
+div#header {
+	background-image: url('images/header.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: #b35e45;
+	width: 960px;
+	height: 100px;
+	margin: 35px auto 0 auto;
+}
+
+div#headline {
+	float: left;
+	width: 380px;
+}
+
+div#header h1 {
+	float: left;
+	display: block;
+	height: 100px;
+	font-size: 2em;
+	text-indent: -9999px;
+}
+
+div#header h1 a {
+	display: block;
+	width: 380px;
+	height: 100px;
+}
+
+div#header p {
+	float: left;
+	text-indent: -9999px;
+}
+
+div#header ol,
+div#header ul,
+div#header il {
+	list-style: none;
+}
+
+/*# MENU #*/
+
+div#access {
+	float: right;
+	overflow: auto;
+	margin: 63px 10px 0 0;
+	font-size: 0.96em;
+}
+
+li.menu-item {
+	float: left;
+	margin: 0 25px 0 0;
+}
+
+div#header .menu-header a {
+	color: #eae0c5;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div#header .menu-header .current-menu-item a  {
+	color: #b02e0b;
+}
+
+/*## CONTENT ##*/
+
+div#content {
+	width: 910px;
+	margin: 45px auto 0 auto;
+}
+
+div#column-one {
+	float: left;
+	width: 450px; /* -30px */
+	padding: 0 30px 0 0;
+}
+
+div#column-two {
+	float: left;
+	width: 430px;
+}
+
+div#content h1, 
+div#content h2, 
+div#content h3,
+div#content h4, 
+div#content h5, 
+div#content h6 {
+	margin: 18px 0 15px 10px;
+	font-style: italic;
+}
+
+div#content h1 {
+	font-size: 1.6em;
+	font-weight: none;
+}
+
+div#content h2 {
+	display: block;
+	background-image: url('images/line.png');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	height: 30px;
+	margin-bottom: 0;
+	font-size: 1.6em;
+	font-weight: none;
+}
+
+div#content h3 {
+	margin-bottom: 0;
+	font-size: 1.2em;
+	color: #44211c;
+}
+
+div#content{
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+div#content ul {
+	margin: 12px 50px 0 30px;
+}
+
+/* TODO: cleanup */
+div#content div#column-two ul {
+	margin-right: 20px;
+}
+
+div#content ol {
+	margin: 12px 50px 0 35px;
+}
+
+div#content div#column-two ol {
+	margin-right: 20px;
+}
+
+div#content p {
+	margin: 12px 50px 0 10px;
+}
+
+div#content div#column-two p {
+	margin-right: 20px;
+}
+
+div#content p > img {
+	/*margin: -12px -50px 0 -10px;*/
+	position: relative;
+	top: -12px;
+	left: -10px;
+}
+
+div#content img {
+	/* TODO: uncomment, when images are replaced */
+	/*box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);*/
+}
+
+/*## HOME ##*/
+
+div#content.home {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+div#content.home p {
+	margin: 14px 0 0 10px;
+}
+
+div#content.home p > img {
+	/*margin: -14px 0 0 -10px;*/
+	position: relative;
+	top: -14px;
+	left: -10px;
+	box-shadow: none;
+}
+
+div#content.home div#home-slideshow {
+	position: relative;
+	min-width: 100px;
+	min-height: 100px;
+	top: -65px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+div#content.home div#home-slideshow p {
+	display: block;
+	position: absolute;
+	top: 0; 
+	left: 0;
+	z-index: 1;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #eae0c5;
+}
+
+/*## KOMPETENZEN UND PHILO ##*/
+
+div#top-image-big,
+div#top-image-big-slide {
+	position: relative; 
+	background-image: url('images/big-shadow.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 907px;
+	height: 338px;
+}
+
+div#top-image-big img { 
+	margin: 9px 9px;
+	box-shadow: none;
+}
+
+div#top-image-big-slide img {
+	display: block;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 1;
+	margin: 9px 9px;
+	box-shadow: none;
+}
+
+/*## CONTACT ##*/
+
+div#contact-map {
+	background-image: url('images/contact-map-shadow.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 428px;
+	height: 321px;
+	margin: 20px 0 0 0;
+}
+
+div#contact-map iframe {
+	margin: 9px 0 0 9px;
+}
+
+div#contact-area {
+	margin: 14px 0 0 15px;
+}
+
+div#contact-area input {
+	padding: 5px;
+	width: 240px;
+	font-family: Fontin, Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ddcb9c;
+}
+
+div#contact-area textarea {
+	height: 90px;
+	width: 390px;
+	margin: 0px 0px 10px 0px;
+	padding: 5px;
+	font-family: Fontin, Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2em;
+	border: 1px solid #ddcb9c;
+}
+
+div#contact-area input.submit-button {
+	background-image: url('images/contact-send-button.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	border: none;
+	text-indent: -9999px;
+	width: 188px;
+	height: 47px;
+	background-color: transparent; /*TODO: wtf!*/
+	margin-left: 220px;
+}
+
+div#contact-area input.submit-button:hover {
+	cursor: pointer;
+}
+
+div#contact-area input::-webkit-input-placeholder, 
+div#contact-area textarea::-webkit-input-placeholder {
+    color: #000000;
+}
+
+div#contact-area input:-moz-placeholder,
+div#contact-area textarea:-moz-placeholder {
+    color: #000000;
+}
+
+
+
+
+
+

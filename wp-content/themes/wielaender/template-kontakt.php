@@ -123,7 +123,7 @@ normForm();
 ?>
 
 	<div id="contact-map">
-		<iframe width="410" height="303" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wurmsergasse+39,+1150+Wien&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=39.099308,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Wurmsergasse+39,+Rudolfsheim-F%C3%BCnfhaus+1150+Wien,+Austria&amp;ll=48.199283,16.320886&amp;spn=0.004026,0.009645&amp;z=14&amp;output=embed"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5320.329073268697!2d16.358321523059573!3d48.1841812313987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da82daa5c2649%3A0x5b8421d676f1d2de!2sWimmergasse+2%2C+1050+Wien%2C+Austria!5e0!3m2!1sen!2s!4v1409225837569" width="410" height="303" frameborder="0" style="border:0"></iframe>
 	</div>
 
 <?php
